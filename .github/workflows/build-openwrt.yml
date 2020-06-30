@@ -73,9 +73,9 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
     - name: Update feeds
-      run: 
-        cd openwrt 
-        sed -i '5s/#src-git/src-git/g' feeds.conf.default
+      run:  |
+        cd openwrt &&
+        sed -i '5s/#src-git/src-git/g' feeds.conf.default &&
         ./scripts/feeds update -a
 
     - name: Install feeds
