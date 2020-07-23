@@ -12,5 +12,5 @@
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-cd package/feeds
+cd ../package/feeds
 git clone https://github.com/rufengsuixing/luci-app-adguardhome
